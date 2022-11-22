@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	nums := []int{3, 2, 3}
+	nums := []int{3, 3, 4}
 
 	fmt.Println(majorityElement(nums))
 
@@ -18,7 +18,7 @@ func majorityElement(nums []int) int {
 			result = nums[i]
 			count = 1
 		} else {
-			if count == nums[i] {
+			if result == nums[i] {
 				count++
 			} else {
 				count--
